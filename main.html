@@ -7,47 +7,58 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <main>
-        <img src="assets/img/logo_icon.svg" alt="" width="200">
+    <header>
+        <img class="" src="assets/img/logo_icon.svg" alt="">
         <h1>270 Degrees</h1>
+    </header>
 
-        <h2>Viewer</h2>
-        <p>Our viewer displays your products in 3D. Quick, easy, and affordable. Your product experience will never be the same.</p>
-        <ul>
-            <li>Easy to implement</li>
-            <li>Works on all environments</li>
-            <li>Boost your product experience!</li>
-        </ul>
+    <main>
+        <div class="main-fold">
+            <h2>Viewer</h2>
+            <p>Our viewer displays your products in 3D. Quick, easy, and affordable. Your product experience will never be the same.</p>
+            <ul>
+                <li>Easy to implement</li>
+                <li>Works on all environments</li>
+                <li>Boost your product experience!</li>
+            </ul>
+        </div>
 
         <!--This is the element containing the 3D viewer-->
-        <div class="js-270viewer" data-270-model="270logo" data-270-width="500px" data-270-height="500px" data-270-autorotate="true" data-270-autorotate-speed="-1.5"></div>
+        <div class="js-270viewer" data-270-model="270logo" data-270-width="370px" data-270-height="370px" data-270-autorotate="true" data-270-autorotate-speed="-1.5"></div>
 
-        <h2>Configurator</h2>
-        <p>People are sensitive for personalization. Our configurator customizes your products for an optimal user experience.</p>
-        <ul>
-            <li>Real time</li>
-            <li>High quality</li>
-            <li>Personalize your assets!</li>
-        </ul>
+        <div class="main-fold">
+            <h2>Configurator</h2>
+            <p>People are sensitive for personalization. Our configurator customizes your products for an optimal user experience.</p>
+            <ul>
+                <li>Real time</li>
+                <li>High quality</li>
+                <li>Personalize your assets!</li>
+            </ul>
 
-        <h2>Full experience</h2>
-        <p>Your 3D assets can alse be used in a fully tailored experience. We work with the best agencies to design and build such solutions.</p>
-        <ul>
-            <li>Unique experience</li>
-            <li>Tailor made</li>
-            <li>Distinguish yourself from the competition!</li>
-        </ul>
+        </div>
 
-        <p>Let's discover together how we can distinguish ourselves from the competition.</p>
+        <div class="main-fold">
+            <h2>Full experience</h2>
+            <p>Your 3D assets can alse be used in a fully tailored experience. We work with the best agencies to design and build such solutions.</p>
+            <ul>
+                <li>Unique experience</li>
+                <li>Tailor made</li>
+                <li>Distinguish yourself from the competition!</li>
+            </ul>
+        </div>
 
-        <h2>Assets implementation</h2>
-        <p>Once your assets are created, our SaaS solutions makes sure that they are safely stored
-        and can be viewed on every platform, in all browsers and on any device. Fast, easy, and 
-        without any effort from your side.
-        </p>
-        <p>We guarantee a 99,9% availability of your products and make sure that they will stay 
-        available over time.</p>
-        <img src="assets/img/assets_implementation_illustration.svg" alt="An illustration showcasing the business process" width="200">
+        <p class="discovery">Let's <strong>discover together</strong> how we can <strong>distinguish</strong> ourselves from the competition.</p>
+
+        <div class="main-fold">
+            <h2>Assets implementation</h2>
+            <p>Once your assets are created, our SaaS solutions makes sure that they are safely stored
+            and can be viewed on every platform, in all browsers and on any device. Fast, easy, and 
+            without any effort from your side.
+            </p>
+            <p>We guarantee a 99,9% availability of your products and make sure that they will stay 
+            available over time.</p>
+            <img src="assets/img/assets_implementation_illustration.svg" alt="An illustration showcasing the process of loading the viewer" class="img-process">
+        </div>
     </main>
     
     <nav>
@@ -65,7 +76,7 @@
         <a>Disclaimer</a>
     </footer>
 
-    <!--Script and authentication key-->
+    <!--Authentication key and API script are loaded in last-->
     <script>window.TSDAPIKEY = 'rest-of-the-owl';</script>
     <script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
 </body>

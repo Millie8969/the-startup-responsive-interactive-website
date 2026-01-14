@@ -1,0 +1,102 @@
+:root {
+    /* Primary colors */
+    --primary-white: #FFFFFF;
+    --primary-caroBlue: #52A4D6;
+    --primary-lapLaz: #1D72A6;
+    --primary-maasBlue: #082036;
+    --primary-black: #0A0A0A;
+    --page-bg-color: #C7C7C7;
+
+    /* Secondary colors */
+    --secondary-lapLazLight: #D2E3ED;
+    --secondary-mayaBlue: #72C1F2;
+    --secondary-CBA: #3C8FC2;
+    --secondary-darkCeru: #1A4973;
+    --secondary-SpaceCadet: #12314D;
+
+    /* Spacing */
+    --margin-disabled: 0px;
+    --letter-spacing-default: 3%;
+    --padding-li: 5px;
+    --padding-header: 20px;
+
+    /* Typography - Headings */
+
+    /* Sizing */
+    --size-h1-desktop: 96px;
+    --size-h1-tablet: 72px;
+    --size-h1-mobile: 64px;
+
+    --size-h2-desktop: 72px;
+    --size-h2-tablet: 64px;
+    --size-h2-mobile: 48px;
+
+    --size-h3-desktop: 64px;
+    --size-h3-tablet: 48px;
+    --size-h3-mobile: 32px;
+
+    --size-h4-desktop: 48px;
+    --size-h4-tablet: 40px;
+    --size-h4-mobile: 32px;
+
+    /* Typography - Body */
+    --size-body-l-desktop: 32px;
+    --size-body-l-tablet: 28px;
+    --size-body-l-mobile: 24px;
+
+    --size-body-m-desktop: 28px;
+    --size-body-m-tablet: 24px;
+    --size-body-m-mobile: 20px;
+
+    --size-body-s-desktop: 24px;
+    --size-body-s-tablet: 20px;
+    --size-body-s-mobile: 16px;
+
+    --size-navCtaPretitle: 16px;
+}
+
+/* Custom Fonts*/
+    @font-face {
+        font-family: "DIN 2014";
+        src: url("assets/fonts/din-2014.otf");
+    }
+
+body {
+    color: var(--primary-white);
+    background-color: var(--page-bg-color);
+    font-family: "DIN 2014";
+    letter-spacing: var(--letter-spacing-default);
+}
+
+header {
+    padding-top: var(--padding-header);
+}
+
+li {
+    list-style-image: url("assets/icons/fill.svg");
+    align-content: center;
+    padding: var(--padding-li);
+    list-style-position: inside;
+}
+
+h1 {
+    font-size: var(--size-h1-desktop);
+}
+
+.main-fold {
+    background-color: var(--primary-maasBlue);
+}
+
+.reverse {
+    text-align: right;
+}
+
+.discovery {
+    margin-top: var(--margin-disabled);
+    margin-bottom: var(--margin-disabled);
+    background-color: var(--secondary-SpaceCadet);
+    
+    & strong {
+        color: var(--primary-caroBlue);
+    }
+}
