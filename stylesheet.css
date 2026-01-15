@@ -16,9 +16,11 @@
 
     /* Spacing */
     --margin-disabled: 0px;
+    --margin-small: 10px;
     --letter-spacing-default: 3%;
     --padding-li: 5px;
-    --padding-header: 20px;
+    --padding-default: 20px;
+    --padding-small: 10px;
 
     /* Typography - Headings */
 
@@ -56,9 +58,9 @@
 }
 
 /* Custom Fonts*/
-    @font-face {
-        font-family: "DIN 2014";
-        src: url("assets/fonts/din-2014.otf");
+@font-face {
+    font-family: "DIN 2014";
+    src: url("assets/fonts/din-2014.otf");
     }
 
 body {
@@ -69,7 +71,51 @@ body {
 }
 
 header {
-    padding-top: var(--padding-header);
+    padding-top: var(--padding-default);
+}
+
+* {
+    margin-top: var(--margin-disabled);
+    margin-bottom: var(--margin-disabled);
+}
+
+.img-process {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--padding-default);
+    padding-bottom: var(--padding-default);
+    width: 100%;
+}
+
+footer {
+    background-color: var(--primary-white);
+    width: 100%;
+    height: 200px;
+}
+
+.footer-text {
+    position: absolute;
+    color: var(--secondary-SpaceCadet);
+    padding-left: var(--padding-small);
+}
+
+.footer-link {
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+    color: var(--secondary-SpaceCadet);
+
+}
+
+.footer-icon {
+    display: block;
+    padding: var(--padding-default);
+    max-width: 25%;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 li {
@@ -81,6 +127,7 @@ li {
 
 h1 {
     font-size: var(--size-h1-desktop);
+    font-weight: bold;
 }
 
 .main-fold {
@@ -98,5 +145,50 @@ h1 {
     
     & strong {
         color: var(--primary-caroBlue);
+    }
+}
+
+.detail {
+    font-size: var(--size-navCtaPretitle);
+}
+
+/* Media Queries */
+@media screen and (375px <= width <= 899px) {
+    h1 {
+        font-size: var(--size-h1-mobile);
+    }
+
+    h2 {
+        font-size: var(--size-h2-mobile);
+    }
+
+    li{
+        font-size: var(--size-body-m-mobile);
+    }
+
+    .b-large {
+        font-size: var(--size-body-l-mobile);
+    }
+
+    .b-medium {
+        font-size: var(--size-body-m-mobile);
+    }
+    
+    .b-small {
+        font-size: var(--size-body-s-mobile);
+    }
+}
+
+@media screen and (900px <= width <= 1194px) {
+
+}
+
+@media screen and (width <= 590px) {
+    .footer-text {
+        position: static;
+    }
+
+    .footer-link {
+        padding: var(--padding-default);
     }
 }
