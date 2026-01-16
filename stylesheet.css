@@ -20,7 +20,8 @@
     --letter-spacing-default: 3%;
     --padding-li: 5px;
     --padding-default: 20px;
-    --padding-small: 10px;
+    --padding-small: 15px;
+    --padding-smaller: 10px;
 
     /* Typography - Headings */
 
@@ -55,6 +56,9 @@
     --size-body-s-mobile: 16px;
 
     --size-navCtaPretitle: 16px;
+
+    /* Buttons */
+    --nav-button-radius: 30px;
 }
 
 /* Custom Fonts*/
@@ -70,6 +74,19 @@ body {
     letter-spacing: var(--letter-spacing-default);
 }
 
+.main-img-mobile {
+    display: block;
+    width: 10%;
+    margin: auto;
+    filter: invert(100%);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 header {
     padding-top: var(--padding-default);
 }
@@ -79,12 +96,34 @@ header {
     margin-bottom: var(--margin-disabled);
 }
 
+.b-large {
+    font-size: var(--size-body-l-desktop);
+}
+
+.b-medium {
+    font-size: var(--size-body-m-desktop);
+}
+
+.b-small {
+    font-size: var(--size-body-s-desktop)
+}
+
+.viewer-container {
+    display: inline;
+}
+
 .img-process {
     display: flex;
     justify-content: center;
     padding-top: var(--padding-default);
     padding-bottom: var(--padding-default);
     width: 100%;
+}
+
+.contact {
+    padding: var(--padding-default);
+    background-color: var(--secondary-darkCeru);
+    font-weight: lighter;
 }
 
 footer {
@@ -130,8 +169,16 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: var(--size-h2-desktop);
+}
+
 .main-fold {
     background-color: var(--primary-maasBlue);
+}
+
+.heading-small {
+    font-size: var(--size-h3-desktop);
 }
 
 .reverse {
@@ -152,8 +199,29 @@ h1 {
     font-size: var(--size-navCtaPretitle);
 }
 
+.contactButton {
+    font-family: "DIN 2014";
+    padding: var(--padding-small);
+    border: none;
+    border-radius: var(--nav-button-radius);
+    background-color: var(--primary-caroBlue);
+    color: var(--primary-white);
+    margin: var(--margin-small);
+}
+
+.learnMoreButton {
+    font-family: "DIN 2014";
+    padding: var(--padding-small);
+    border: solid;
+    border-color: var(--primary-caroBlue);
+    border-radius: var(--nav-button-radius);
+    background-color: var(--secondary-darkCeru);
+    color: var(--primary-caroBlue);
+    margin: var(--margin-small);
+}
+
 /* Media Queries */
-@media screen and (375px <= width <= 899px) {
+@media screen and (width <= 899px) {
     h1 {
         font-size: var(--size-h1-mobile);
     }
@@ -177,6 +245,8 @@ h1 {
     .b-small {
         font-size: var(--size-body-s-mobile);
     }
+    
+
 }
 
 @media screen and (900px <= width <= 1194px) {
