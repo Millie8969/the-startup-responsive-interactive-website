@@ -1,8 +1,10 @@
 // Stap 1: Selecteer de nodige elementen voor de interactie.
 const navButton = document.querySelector('.nav-button');
 const navContainer = document.querySelector('.nav-mobile');
+const navButtonText = document.querySelector('.nav-button-text')
 const buttonImageHamburger = document.querySelector('#hamburger');
-const buttonImageHamburgerClose = document.querySelector('#hamburger-close')
+const buttonImageHamburgerClose = document.querySelector('#hamburger-close');
+
 
 // Stap 2: Voeg een event listener toe aan het element dat een event zal ondergaan.
 navButton.addEventListener('click', function() {
@@ -11,6 +13,7 @@ navButton.addEventListener('click', function() {
     navContainer.classList.toggle('open');
     buttonImageHamburger.classList.toggle('hidden');
     buttonImageHamburgerClose.classList.toggle('hidden');
+    navButtonText.classList.toggle('hidden');
 });
 
 console.log("Script loaded!")

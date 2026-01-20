@@ -137,10 +137,24 @@ header {
     filter: invert(100%);
 }
 
+.nav-button-text {
+    position: fixed;
+    width: 200px;
+    top: 10%;
+    right: -139px;
+    display: flex;
+    z-index: 1;
+    text-shadow: 1px 1px 2px var(--primary-black);
+
+    @media (width >= 900px) {
+        display: none;
+    }
+}
+
 .nav-mobile {
     position: fixed;
     width: 200px;
-    top: 15%;
+    top: 13%;
     right: 0px;
     display: flex;
     flex-direction: column;
