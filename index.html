@@ -18,9 +18,23 @@
                 <button class="nav-contact-button">Contact</button>
             </div>
         </nav>
+
         <img class="main-img-mobile" src="assets/img/logo_icon.svg" alt="">
         <h1 class="title">270 Degrees</h1>
     </header>
+
+    <button class="nav-button" aria-label="Navigation menu">
+        <img src="assets/icons/icon-menu.svg" class="nav-button-icon" id="hamburger" alt="">
+        <img src="assets/icons/icon-close.svg" class="nav-button-icon hidden" id="hamburger-close" alt="">
+    </button>
+
+    <nav class="nav-mobile">
+        <a class="nav-mobile-link">Assets</a>
+        <a class="nav-mobile-link">Solutions</a>
+        <a class="nav-mobile-link">Cases</a>
+        <a class="nav-mobile-link">About 270</a>
+        <a class="nav-mobile-link">Contact</a>
+    </nav>
 
     <main>
         <div class="main-fold" id="viewer-fold">
@@ -97,5 +111,6 @@
     <!--Authentication key and API script are loaded in last-->
     <script>window.TSDAPIKEY = 'rest-of-the-owl';</script>
     <script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
