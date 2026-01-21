@@ -201,6 +201,13 @@ header {
 
 .header-nav-link {
     margin-right: var(--margin-small);
+    color: var(--primary-white);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.header-nav-link:hover {
+    color: var(--secondary-mayaBlue);
 }
 
 .nav-contact-button {
@@ -274,10 +281,16 @@ footer {
     margin-left: var(--margin-small);
     margin-right: var(--margin-small);
     color: var(--secondary-SpaceCadet);
+    text-decoration: none;
+    transition: 0.25s;
 
     @media (width <= 590px) {
         padding: var(--padding-small);
     }
+}
+
+.footer-link:hover {
+    color: var(--primary-caroBlue);
 }
 
 .footer-icon {
@@ -370,6 +383,16 @@ h2 {
     background-color: var(--primary-caroBlue);
     color: var(--primary-white);
     margin: var(--margin-small);
+
+    transition: 0.25s;
+}
+
+.contactButton:hover {
+    background-color: var(--secondary-darkCeru);
+    color: var(--primary-caroBlue);
+    border: solid;
+    border-color: var(--primary-caroBlue);
+    border-radius: var(--nav-button-radius);
 }
 
 .learnMoreButton {
@@ -381,4 +404,11 @@ h2 {
     background-color: var(--secondary-darkCeru);
     color: var(--primary-caroBlue);
     margin: var(--margin-small);
+
+    transition: 0.25s;
+}
+
+.learnMoreButton:hover {
+    background-color: var(--primary-caroBlue);
+    color: var(--primary-white);
 }
