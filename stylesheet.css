@@ -28,6 +28,10 @@
     --padding-smallest: 10px;
     --border-radius-nav: 10px;
 
+    /* Element sizing */
+    --fold-max-width: 65%;
+    --fold-img-max-width: 300px;
+
     /* Typography - Headings */
 
     /* Sizing */
@@ -82,7 +86,7 @@ body {
 
 .main-img-desktop {
     margin-left: var(--margin-small);
-    width: 10%;
+    width: 25%;
     filter: invert(100%);
 }
 
@@ -132,7 +136,7 @@ header {
 .nav-button-text {
     position: fixed;
     width: 200px;
-    top: 10%;
+    top: 65px;
     right: -139px;
     display: flex;
     z-index: 1;
@@ -163,10 +167,12 @@ header {
 
 .nav-mobile-link {
     background-color: var(--primary-caroBlue);
+    color: var(--primary-white);
     font-size: var(--size-navCtaPretitle);
     padding: var(--padding-smallest);
     border: 2px solid;
     border-color: var(--secondary-darkCeru);
+    text-decoration: none;
     transition: 0.25s;
 }
 
@@ -219,6 +225,11 @@ header {
     color: var(--primary-white);
     margin: var(--margin-small);
     margin-left: var(--padding-default);
+    transition: 0.25s;
+}
+
+.nav-contact-button:hover {
+    background-color: var(--secondary-darkCeru);
 }
 
 * {
@@ -239,8 +250,31 @@ header {
     font-size: var(--size-body-s);
 }
 
-.viewer-container {
-    display: inline;
+.fold-img {
+    max-width: var(--fold-img-max-width);
+    height: auto;
+}
+
+#configurator-img {
+    margin-right: var(--margin-default);
+}
+
+.fold-img-container {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    margin-left: var(--margin-default);
+
+    @media (width < 1015px) {
+        margin-left: var(--margin-disabled);
+        padding-bottom: var(--padding-default);
+    }
+}
+
+.fold-img-container.left-sided {
+    margin-right: var(--margin-default);
 }
 
 .img-process-container {
@@ -322,13 +356,27 @@ h2 {
 }
 
 .main-fold {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--primary-maasBlue);
     padding: var(--padding-small);
+    padding-bottom: var(--padding-default);
 
     @media (width < 1015px) {
         flex-direction: column;
         padding: var(--padding-smallest);
     }    
+}
+
+.main-fold.assets-implementation {
+    flex-direction: column;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    @media (width < 1015px) {
+        flex-direction: column;
+    }
 }
 
 #viewer-fold {
@@ -337,12 +385,11 @@ h2 {
 
 .fold-text-container {
     max-width: 65%;
+    margin-bottom: var(--margin-default); 
 
     @media (width < 1015px) {
         max-width: 100%;
-    }  
-
-    margin-bottom: var(--margin-default); 
+    }
 }
 
 #viewer-container {
@@ -411,4 +458,5 @@ h2 {
 .learnMoreButton:hover {
     background-color: var(--primary-caroBlue);
     color: var(--primary-white);
+    border-color: var(--primary-white);
 }
