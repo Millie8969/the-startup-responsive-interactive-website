@@ -22,18 +22,20 @@ Link naar de site: [270 Degrees](https://millie8969.github.io/the-startup-respon
 De belangrijkste kenmerken zijn het gebruik van semantisch correcte elementen, het integreren van een hamburger menu met een animatie volgens het Disney animatie-principe "Squash and Stretch" en het gebruik van de meegegeven huisstijl vanuit Assist Digital.
 
 Het hamburger-menu heb ik gemaakt door een nav-element te vullen met links (die nu nog niks doen). Het hele menu komt vanuit rechts in beeld met een korte animatie die gebruikt maakt van het Squash and Stretch-principe. Dit is gedaan met behulp van de cubic-bezier()-functie in CSS.
-
-`<nav class="nav-mobile">
+```
+<nav class="nav-mobile">
     <a href="" class="nav-mobile-link">Assets</a>
     <a href="" class="nav-mobile-link">Solutions</a>
     <a href="" class="nav-mobile-link">Cases</a>
     <a href="" class="nav-mobile-link">About 270</a>
     <a href="" class="nav-mobile-link">Contact</a>
-</nav>`
+</nav>
+```
 
 In JS ziet het er zo uit:
 
-`// Stap 1: Selecteer de nodige elementen voor de interactie.
+```
+// Stap 1: Selecteer de nodige elementen voor de interactie.
 const navButton = document.querySelector('.nav-button');
 const navContainer = document.querySelector('.nav-mobile');
 const navButtonText = document.querySelector('.nav-button-text')
@@ -49,7 +51,8 @@ navButton.addEventListener('click', function() {
     buttonImageHamburger.classList.toggle('hidden');
     buttonImageHamburgerClose.classList.toggle('hidden');
     navButtonText.classList.toggle('hidden');
-});`
+});
+```
 
 De meegegeven huisstijl heb ik iets anders verwerkt dan in het design wordt weergegeven, omdat het ontwerp anders niet zo toegankelijk is. Ook heb ik de achtergrondkleur van de website moeten aanpassen. Wél heb ik ervoor gezorgd dat alle kleuren binnen de huisstijl vallen, zodat er in ieder niet wordt afgeweken van het kleurenpalet.
 
