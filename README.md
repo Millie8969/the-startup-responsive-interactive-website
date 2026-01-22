@@ -53,6 +53,7 @@ navButton.addEventListener('click', function() {
     navButtonText.classList.toggle('hidden');
 });
 ```
+Ten slotte heb ik met het oog op responsiveness gebruik gemaakt van de functie 'clamp()' om op die manier altijd de juiste lettergrootte weer te geven, ongeacht welk apparaat je gebruikt om de website te bekijken.
 
 De meegegeven huisstijl heb ik iets anders verwerkt dan in het design wordt weergegeven, omdat het ontwerp anders niet zo toegankelijk is. Ook heb ik de achtergrondkleur van de website moeten aanpassen. Wél heb ik ervoor gezorgd dat alle kleuren binnen de huisstijl vallen, zodat er in ieder niet wordt afgeweken van het kleurenpalet.
 
