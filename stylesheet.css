@@ -432,7 +432,7 @@ h2 {
     padding: var(--padding-smaller);
     border: none;
     border-radius: var(--nav-button-radius);
-    background-color: var(--primary-caroBlue);
+    background-color: var(--primary-maasBlue);
     color: var(--primary-white);
     margin: var(--margin-small);
 
@@ -440,21 +440,17 @@ h2 {
 }
 
 .contactButton:hover {
-    background-color: var(--secondary-darkCeru);
-    color: var(--primary-caroBlue);
-    border: solid;
-    border-color: var(--primary-caroBlue);
-    border-radius: var(--nav-button-radius);
+    background-color: var(--primary-lapLaz);
 }
 
 .learnMoreButton {
     font-family: "DIN 2014";
     padding: var(--padding-smaller);
     border: solid;
-    border-color: var(--primary-caroBlue);
+    border-color: var(--primary-maasBlue);
     border-radius: var(--nav-button-radius);
-    background-color: var(--secondary-darkCeru);
-    color: var(--primary-caroBlue);
+    background-color: var(--secondary-SpaceCadet);
+    color: var(--primary-white);
     margin: var(--margin-small);
 
     transition: 0.25s;
