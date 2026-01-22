@@ -236,7 +236,7 @@ li {
 }
 
 .nav-mobile-link {
-    background-color: var(--primary-caroBlue);
+    background-color: var(--secondary-SpaceCadet);
     color: var(--primary-white);
     font-size: var(--size-navCtaPretitle);
     padding: var(--padding-smallest);
@@ -247,7 +247,7 @@ li {
 }
 
 .nav-mobile-link:hover {
-    background-color: var(--secondary-SpaceCadet);
+    background-color: var(--primary-caroBlue);
 }
 
 .nav-mobile-link:nth-of-type(1) {
