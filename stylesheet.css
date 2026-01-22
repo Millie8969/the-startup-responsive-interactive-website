@@ -128,7 +128,7 @@ li {
     padding: var(--padding-smaller);
     border: none;
     border-radius: var(--nav-button-radius);
-    background-color: var(--primary-caroBlue);
+    background-color: var(--secondary-darkCeru);
     color: var(--primary-white);
     margin: var(--margin-small);
     margin-left: var(--padding-default);
@@ -136,7 +136,7 @@ li {
 }
 
 .nav-contact-button:hover {
-    background-color: var(--secondary-darkCeru);
+    background-color: var(--primary-caroBlue);
 }
 
 .title {
